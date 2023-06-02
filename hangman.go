@@ -263,7 +263,6 @@ func chooseRandomWord(numberOfLetters int,gameType string) string {
 		}
 		dataString := string(lettersData)
 		someWords := strings.Split(dataString, " ")
-		fmt.Printf("%v\n",someWords)
 		randomNumber := rand.Intn(len(someWords)-1)
 		chosenWord := someWords[randomNumber]
 		return chosenWord
